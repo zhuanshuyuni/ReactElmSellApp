@@ -1,0 +1,139 @@
+.goods-wrappper {
+	position: absolute;
+	left: 0;
+	top: 174px;
+	bottom: 48px;
+	display: flex;
+	width: 100%;
+	overflow: hidden;
+	.goods-left {
+		flex: 0 0 80px;
+		width: 80px;
+		background: #f3f5f7;
+		.left-item {
+			display: table;
+			color: #000;
+			font-size: 12px;
+			font-weight: 200;
+			padding: 0 12px;
+			height: 54px;
+			&.selectItem {
+				color: rgb(240, 20, 20);
+				background: #fff;
+			}
+			.name {
+				display: table-cell;
+				vertical-align: middle;
+				border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+				width: 54px;
+				line-height: 14px;
+			}
+			.support {
+				width: 12px;
+				height: 12px;
+				background: #000;
+				background-size: 100%;
+				background-repeat: no-repeat;
+				margin-right: 2px;
+				&.decrease {
+					background-image: url('../header/decrease_1@2x.png');
+				}
+				&.discount {
+					background-image: url('../header/discount_1@2x.png');
+				}
+				&.guarantee {
+					background-image: url('../header/guarantee_1@2x.png');
+				}
+				&.invoice {
+					background-image: url('../header/invoice_1@2x.png');
+				}
+				&.special {
+					background-image: url('../header/special_1@2x.png');
+					
+				}
+
+			}
+		}
+	}
+	.goods-right {
+		flex: 1;
+		.right-item {
+			h1 {
+				font-size: 12x;
+				color: rgb(147, 153, 159);
+				border-left: 2px solid #d9dde1;
+				background: #f3f5f7;
+				padding-left: 14px;
+				line-height: 26px;
+				height: 26px;
+			}
+			.food-item {
+				display: flex;
+				position: relative;
+				margin: 18px;
+				padding-bottom: 18px;
+				border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+				&:last-child {
+					margin-bottom: 0;
+					border-bottom: none;
+				}
+				.icon-wrapper {
+					flex: 0 0 57px;
+					width: 57px;
+					img {
+						width: 57px;
+						height: 57px;
+					}
+				}
+				.content-wrapper {
+					flex: 1;
+					margin-left: 10px;
+					.name {
+						font-size: 14px;
+						color: rgb(7, 17, 27);
+						line-height: 14px;
+						margin: 2px 0 8px 0;
+					}
+					.description {
+						font-size: 10px;
+						color: rgb(147, 153, 159);
+						line-height: 14px;
+					}
+					.count-rating {
+						margin-top: 8px;
+						font-size: 10px;
+						color: rgb(147, 153, 159);
+						line-height: 10px;
+						.count {
+							display: inline-block;
+							margin-right: 12px;
+						}
+						.rating {
+							display: inline-block;
+						}
+					}
+					.price-wrapper {
+						font-weight: 700;
+						line-height: 24px;
+						.new {
+							font-size: 14px;
+							color: rgb(240, 20, 20);
+							margin-right: 8px;
+						}
+						.old {
+							font-size: 10px;
+							color: rgb(147, 153, 159);
+							text-decoration: line-through;
+
+						}
+					}
+				}
+				.cartcontrol-wrapper {
+					position: absolute;
+					right: 0;
+					bottom: 12px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,164 @@
+.seller-wrapper {
+	position: absolute;
+	top: 174px;
+	left: 0;
+	bottom: 48px;
+	width: 100%;
+	overflow: hidden;
+	.seller {
+		.content {
+			padding:18px;
+			.top {
+				position: relative;
+				padding-bottom: 18px;
+				border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+				.name {
+					font-size: 14px;
+					color: rgb(7, 17, 27);
+					line-height: 14px;
+				}
+				.wrapper {
+					margin-top: 8px;
+					.star {
+						display: inline-block;
+						vertical-align: top;
+					}
+					.count {
+						vertical-align: top;
+						font-size: 10px;
+						color: rgb(77, 85, 93);
+						line-height: 18px;
+					}
+					.ratingCount {
+						vertical-align: top;
+						margin: 0 12px 0 8px;
+					}
+				}
+				.collection {
+					position: absolute;
+					right: 0px;
+					top: 0px;
+					text-align: center;
+					width: 50px;
+					.icon-favorite {
+						font-size: 24px;
+						line-height: 24px;
+						color: #d4d6d9;
+						&.favorite {
+							color: rgb(240, 20, 20);
+
+						}
+					}
+					.text {
+						margin-top: 4px;
+						font-size: 10px;
+						color: rgb(77, 85, 93);
+						line-height: 10px;
+					}
+				}
+			}
+			.bottom {
+				display: flex;
+				padding-top: 18px;
+				.remark {
+					flex: 1;
+					text-align: center;
+					border-right: 1px solid rgba(7, 17, 27, 0.1);
+					&.last {
+						border-right: none;
+					}
+					.title {
+						font-size: 10px;
+						color: rgb(147, 153, 159);
+						line-height: 10px;
+						margin-bottom: 4px;
+					}
+					.number {
+						font-size: 24px;
+						color: rgb(7, 17, 27);
+						font-weight: 200;
+						line-height: 24px;
+						.yuan {
+							font-size: 10px;
+						}
+					}
+				}
+			}
+			
+		}
+		.bulletin {
+			padding: 18px 18px 0 18px;
+			.title {
+				font-size: 14px;
+				color: rgb(7, 17, 27);
+				line-height: 14px;
+				margin-bottom: 8px;
+			}
+			.text {
+				padding: 0 12px;
+				font-size: 12px;
+				font-weight: 200;
+				line-height: 24px;
+				color: rgb(240, 20, 20);
+			}
+			.item {
+				padding: 16px 12px;
+				border-top: 1px solid rgba(7, 17, 27, 0.1);
+			}
+		}
+		.pictures {
+			padding: 18px;
+			.title {
+				font-size: 14px;
+				color: rgb(7, 17, 27);
+				line-height: 14px;
+				margin-bottom: 12px;
+
+			}
+			.picswrapper {
+				width: 100%;
+				overflow: hidden;
+				white-space: nowrap;
+				.item {
+					display: inline-block;
+					width: 120px;
+					height: 90px;
+					margin-right: 6px;
+					&:last-child {
+
+						margin-right: 0;
+					}
+					img {
+						width: 120px;
+						height: 90px;
+					}
+			}
+			}
+			
+		}
+		.sellerInfo {
+			padding: 18px 18px 0 18px;
+			.title {
+				font-size: 14px;
+				color: rgb(7, 17, 27);
+				line-height: 14px;
+				margin-bottom: 16px;
+
+			}
+			.infoList {
+
+				.item {
+					padding: 16px 12px;
+					border-top: 1px solid rgba(7, 17, 27, 0.1);
+					.text {
+						font-size: 12px;
+						font-weight: 200;
+						color: rgb(7, 17, 27);
+						line-height: 16px;
+					}
+
+				}
+			}
+		}
+	}
+}

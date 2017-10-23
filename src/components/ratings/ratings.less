@@ -1,0 +1,155 @@
+.rating-wrapper {
+	position: absolute;
+	left: 0;
+	top: 174px;
+	bottom: 48px;
+	width: 100%;
+	overflow: hidden;
+	.rating {
+		.content {
+			display: flex;
+
+			padding: 18px;
+			.left {
+				flex: 0 0 130px;
+				width: 130px;
+				border-right: 1px solid rgba(7, 17, 27, 0.1);
+				text-align: center;
+				.number {
+					font-size: 24px;
+					color: rgb(255, 193, 0);
+					line-height: 28px;
+					margin-bottom: 6px;
+				}
+				.title {
+					font-size: 12px;
+					color: rgb(7, 17, 27);
+					line-height: 12px;
+					margin-bottom: 8px;
+				}
+				.rank {
+					font-size: 10px;
+					color: rgb(7, 17, 27);
+					line-height: 10px;
+				}
+			}
+			.right {
+				flex: 1;
+				.score-wrapper {
+					margin-left: 12px;
+					font-size: 12px;
+					line-height: 18px;
+					margin-bottom: 8px;
+
+					.title {
+						display: inline-block;
+						vertical-align: top;
+						color: rgb(7, 17, 27);
+						margin-right: 12px;
+					}
+					.star {
+						display: inline-block;
+						margin-right: 12px;
+						vertical-align: top;
+					}
+					.score {
+						display: inline-block;
+						color: rgb(255, 153, 0);
+						vertical-align: top;
+
+					}
+					.time {
+						color: rgb(157, 153, 159);
+						vertical-align: top;
+					}
+				}
+			}
+		}
+		.ratingsList {
+			padding: 0 18px;
+			.item {
+				display: flex;
+				padding: 18px 0;
+				border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+				.logo {
+					flex: 0 0 28px;
+					width: 28px;
+					margin-right: 12px;
+					img {
+						width: 28px;
+						height: 28px;
+						border-radius: 50%;
+					}
+				}
+				.content-wrapper {
+					flex: 1;
+					position: relative;
+					.username {
+						font-size: 10px;
+						color: rgb(7, 17, 27);
+						line-height: 12px;
+						margin-bottom: 4px;
+					}
+					.text {
+						font-size: 12px;
+						color: rgb(7, 17, 27);
+						line-height: 18px;
+						margin-top: 6px;
+
+					}
+					.time {
+						position: absolute;
+						right: 0;
+						top: 0;
+						color: rgb(147, 153, 159);
+						font-size: 10px;
+						line-height: 12px;
+						font-weight: 200;
+
+					}
+					.recommend-wrapper {
+						display: flex;
+						.commend-left {
+							flex: 0 0 16px;
+							width: 16px;
+							.thump {
+
+								font-size: 12px;
+								line-height: 16px;
+								vertical-align: top;
+								&.icon-thumb_down {
+									color: rgb(183, 187, 191);
+								}
+								&.icon-thumb_up {
+									color: rgb(0, 160, 220);
+								}
+							}
+						}
+						
+						.commend-right {
+							flex: 1;
+
+							.commend {
+								display: inline-block;
+								padding: 0 6px;
+								font-size: 9px;
+								line-height: 16px;
+								color: rgb(147, 153, 159);
+								border: 1px solid rgba(7, 17, 27, 0.1);
+								border-radius: 2px;
+								background-color: #fff;
+								margin-right: 8px;
+								&:last-child {
+									margin-right: 0;
+								}
+							}
+						}
+						
+					}
+
+				}
+			}
+		}
+
+	}
+}

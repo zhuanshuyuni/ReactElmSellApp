@@ -1,0 +1,51 @@
+.ratingselect {
+	padding: 0 18px;
+	border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+	.select-type {
+		padding-bottom: 18px;
+		padding-top: 12px;
+		border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+		.type {
+			display: inline-block;
+			padding: 8px 12px;
+			border-radius: 2px;
+			font-size: 18px;
+			color: rgb(77, 85, 93);
+			margin-right: 8px;
+			&.all {
+				background: rgb(0, 160, 220);
+			}
+			&.positive {
+				background: rgba(0, 160, 220, 0.2);
+			}
+			&.negative {
+				background: rgba(77, 85, 93, 0.2);
+			}
+			&.active {
+				color: #fff;
+			}
+			.count {
+				font-size: 8px;
+				margin-left: 4px;
+			}
+			
+		}
+	}
+	.select-content {
+		padding: 12px 0;
+		color: rgb(147, 153, 159);
+		line-height: 24px;
+		.icon-check_circle {
+			display: inline-block;
+			vertical-align: top;
+			font-size: 24px;
+			margin-right: 4px;
+			&.only {
+				color: rgb(0, 160, 220);
+			}
+		}
+		.text {
+			display: inline-block;
+		}
+	}
+}
